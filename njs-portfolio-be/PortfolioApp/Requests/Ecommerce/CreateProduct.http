@@ -1,0 +1,11 @@
+POST http://localhost:5184/products
+Content-Type: application/json
+
+{
+    "name": "Apple Phonersrereresrers 45125",
+    "description": "The newest Somsong Universe T12.",
+    "price": 499.99,
+    "quantity": 12,
+    "url": "None",
+    "tags": ["None", "Noner", "Nonest"]
+}

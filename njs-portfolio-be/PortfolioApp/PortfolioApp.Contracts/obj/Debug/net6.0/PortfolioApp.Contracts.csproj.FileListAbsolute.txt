@@ -1,0 +1,12 @@
+C:\Users\xandr\Desktop\Code\njs-portfolio\njs-portfolio-be\PortfolioApp\PortfolioApp.Contracts\bin\Debug\net6.0\PortfolioApp.Contracts.deps.json
+C:\Users\xandr\Desktop\Code\njs-portfolio\njs-portfolio-be\PortfolioApp\PortfolioApp.Contracts\bin\Debug\net6.0\PortfolioApp.Contracts.dll
+C:\Users\xandr\Desktop\Code\njs-portfolio\njs-portfolio-be\PortfolioApp\PortfolioApp.Contracts\bin\Debug\net6.0\PortfolioApp.Contracts.pdb
+C:\Users\xandr\Desktop\Code\njs-portfolio\njs-portfolio-be\PortfolioApp\PortfolioApp.Contracts\obj\Debug\net6.0\PortfolioApp.Contracts.csproj.AssemblyReference.cache
+C:\Users\xandr\Desktop\Code\njs-portfolio\njs-portfolio-be\PortfolioApp\PortfolioApp.Contracts\obj\Debug\net6.0\PortfolioApp.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\xandr\Desktop\Code\njs-portfolio\njs-portfolio-be\PortfolioApp\PortfolioApp.Contracts\obj\Debug\net6.0\PortfolioApp.Contracts.AssemblyInfoInputs.cache
+C:\Users\xandr\Desktop\Code\njs-portfolio\njs-portfolio-be\PortfolioApp\PortfolioApp.Contracts\obj\Debug\net6.0\PortfolioApp.Contracts.AssemblyInfo.cs
+C:\Users\xandr\Desktop\Code\njs-portfolio\njs-portfolio-be\PortfolioApp\PortfolioApp.Contracts\obj\Debug\net6.0\PortfolioApp.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\xandr\Desktop\Code\njs-portfolio\njs-portfolio-be\PortfolioApp\PortfolioApp.Contracts\obj\Debug\net6.0\PortfolioApp.Contracts.dll
+C:\Users\xandr\Desktop\Code\njs-portfolio\njs-portfolio-be\PortfolioApp\PortfolioApp.Contracts\obj\Debug\net6.0\refint\PortfolioApp.Contracts.dll
+C:\Users\xandr\Desktop\Code\njs-portfolio\njs-portfolio-be\PortfolioApp\PortfolioApp.Contracts\obj\Debug\net6.0\PortfolioApp.Contracts.pdb
+C:\Users\xandr\Desktop\Code\njs-portfolio\njs-portfolio-be\PortfolioApp\PortfolioApp.Contracts\obj\Debug\net6.0\ref\PortfolioApp.Contracts.dll

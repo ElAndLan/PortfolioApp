@@ -1,0 +1,26 @@
+.navContainer {
+  position: fixed;
+  height: 5vh;
+  width: 100%;
+  z-index: 3;
+}
+
+.navContent {
+  background-color: white;
+  height: 5vh;
+}
+
+.userProfile,
+.shoppingCart {
+  position: relative;
+  float: right;
+  margin-right: 2vh;
+  font-size: 190%;
+}
+.portfolioHome,
+.homeButton {
+  position: relative;
+  float: left;
+  margin-left: 2vh;
+  font-size: 190%;
+}

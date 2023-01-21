@@ -1,0 +1,12 @@
+@id = 57b731f9-e481-47fe-b51b-df30fbc16cbc
+PUT http://localhost:5184/products/{{id}}
+Content-Type: application/json
+
+{
+    "name": "Andruid Phonerrs",
+    "description": "The newest Somsong Universe T12.",
+    "price": 499.99,
+    "quantity": 12,
+    "url": "None",
+    "tags": ["Updated tags", "Noner", "Nonest"]
+}
