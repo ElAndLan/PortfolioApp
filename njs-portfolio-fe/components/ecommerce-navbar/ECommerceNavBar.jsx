@@ -12,7 +12,6 @@ import { Badge } from "@mui/material";
 
 const ECommerceNavbar = (cart) => {
   const cartSize = cart.cart.length;
-  console.log(cartSize);
   console.log(cart);
   return (
     <div className={styles.navContainer}>
@@ -30,7 +29,7 @@ const ECommerceNavbar = (cart) => {
         </div>
         <div className={styles.shoppingCart}>
           <Badge badgeContent={cartSize} color="secondary">
-            <Link href="ecommerce-demo/cart">
+            <Link href="ecommerce-demo/cart" >
               <FontAwesomeIcon icon={faCartArrowDown} color="#000000" />
             </Link>
           </Badge>

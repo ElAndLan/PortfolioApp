@@ -1,11 +1,16 @@
-const Cart = () => {
+const Cart = (cart) => {
+  console.log(cart);
   return (
     <>
-      <div>
-        <h1>Hello!</h1>
-      </div>
+      <div>Hello!</div>
     </>
   );
 };
 
 export default Cart;
+
+/* {products.map((product) => {
+            return (
+              <ProductPanel product={product} cart={cart} setCart={setCart} />
+            );
+          })}*/

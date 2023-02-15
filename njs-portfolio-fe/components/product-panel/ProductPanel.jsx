@@ -10,7 +10,6 @@ import styles from "./ProductPanel.module.scss";
 const ProductPanel = ({ product, cart, setCart }) => {
   const handleAddToCart = () => {
     setCart([...cart, product]);
-    console.log(cart);
   };
 
   return (
