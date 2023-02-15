@@ -62,7 +62,7 @@ const NavBar = () => {
                 <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
               </Link>
 
-              <Link
+              {/*<Link
                 className={
                   styles.project_link +
                   " " +
@@ -71,7 +71,7 @@ const NavBar = () => {
                 href="/projects"
               >
                 <FontAwesomeIcon icon={faBoxArchive} color="#4d4d4e" />
-              </Link>
+              </Link>*/}
 
               <Link
                 className={

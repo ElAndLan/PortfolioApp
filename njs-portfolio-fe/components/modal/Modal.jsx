@@ -55,12 +55,13 @@ const Modal = ({ setIsOpen, modalType }) => {
                 <FontAwesomeIcon icon={faX} style={{ marginBottom: "-3px" }} />
               </button>
               <div className={styles.modalContent}>
-                To return to the portfolio main page, click the
+                This project is still a work in progress! It is being constantly
+                updated. To return to the homepage, please press the
                 <FontAwesomeIcon
                   icon={faGlobe}
                   style={{ marginLeft: "3px", fontSize: "2vh" }}
                 />{" "}
-                icon.
+                icon in the top left.
               </div>
               <div className={styles.modalActions}>
                 <div className={styles.actionsContainer}>

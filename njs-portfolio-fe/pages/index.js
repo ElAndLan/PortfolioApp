@@ -8,6 +8,7 @@ const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [modalType, setModalType] = useState("default");
 
+  //Placeholder function that will handle multiple modal-types based on different needs. Currently only one type is used, but this is how you would update it to different types.
   const handleModalOpen = (newModalType) => {
     setModalType(newModalType);
     setIsOpen(true);
