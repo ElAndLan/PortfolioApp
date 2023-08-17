@@ -1,9 +1,27 @@
 import React from "react";
+import { useRef } from "react";
 import styles from "./index.module.scss";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
   const handleSubmit = (e) => {
-    e.preventDefault;
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_0yrjzml",
+        "template_wifql2f",
+        form.current,
+        "X5VDOcIcz2MQdX8IP"
+      )
+      .then(
+        (result) => {
+          console.log(result);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
   };
 
   return (
@@ -36,7 +54,7 @@ const Contact = () => {
         <div className={styles.form_content}>
           <h1>Contact Me</h1>
           <hr />
-          <form onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={handleSubmit}>
             <p>
               <label for="name" className={styles.form_item}>
                 Name:
