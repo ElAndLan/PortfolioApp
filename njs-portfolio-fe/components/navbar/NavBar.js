@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Link from "next/link";
 import styles from "./NavBar.module.scss";
 import { useRouter } from "next/router";
@@ -6,34 +5,45 @@ import Logo from "../../public/assets/logo/logo_a.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBoxArchive,
-  faCartShopping,
   faEnvelope,
   faHome,
   faUser,
+  faSquareCaretLeft,
+  faSquareCaretRight,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faDiscord,
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { useEffect } from "react";
 
-const NavBar = () => {
+const NavBar = ({ hidden, setHidden }) => {
   const router = useRouter();
   const currentPath = router.pathname;
-  let hideNav;
 
-  if (
-    router.pathname === "/ecommerce-demo" ||
-    router.pathname === "/ecommerce-demo/cart"
-  ) {
-    hideNav = true;
-  } else hideNav = false;
+  const handleHide = () => {
+    if (hidden == false) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  };
 
-  console.log(hideNav);
   return (
     <div>
-      {hideNav == false && (
+      {hidden == true && (
+        <>
+          <div className={styles.showIcon}>
+            <FontAwesomeIcon
+              icon={faSquareCaretRight}
+              onClick={handleHide}
+              color="#4d4d4e"
+              className="fa-2x"
+            />
+          </div>
+        </>
+      )}
+      {hidden == false && (
         <>
           <div className={styles.navbar}>
             <Link className={styles.logo} href="/">
@@ -62,16 +72,18 @@ const NavBar = () => {
                 <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
               </Link>
 
-              {/*<Link
-                className={
-                  styles.project_link +
-                  " " +
-                  (currentPath == "/projects" ? styles.active : " ")
-                }
-                href="/projects"
-              >
-                <FontAwesomeIcon icon={faBoxArchive} color="#4d4d4e" />
-              </Link>*/}
+              {
+                <Link
+                  className={
+                    styles.project_link +
+                    " " +
+                    (currentPath == "/projects" ? styles.active : " ")
+                  }
+                  href="/projects"
+                >
+                  <FontAwesomeIcon icon={faBoxArchive} color="#4d4d4e" />
+                </Link>
+              }
 
               <Link
                 className={
@@ -82,17 +94,6 @@ const NavBar = () => {
                 href="/contact"
               >
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-              </Link>
-
-              <Link
-                className={
-                  styles.commerce_link +
-                  " " +
-                  (currentPath === "/ecommerce-demo" ? styles.active : " ")
-                }
-                href="/ecommerce-demo"
-              >
-                <FontAwesomeIcon icon={faCartShopping} color="#4d4d4e" />
               </Link>
             </nav>
             <ul className={styles.ul}>
@@ -125,6 +126,15 @@ const NavBar = () => {
                   <FontAwesomeIcon icon={faDiscord} color="#4d4d4e" />
                 </a>
               </li>
+
+              <div className={styles.hideIcon}>
+                <FontAwesomeIcon
+                  icon={faSquareCaretLeft}
+                  onClick={handleHide}
+                  color="#4d4d4e"
+                  className="fa-2x"
+                />
+              </div>
             </ul>
           </div>
         </>

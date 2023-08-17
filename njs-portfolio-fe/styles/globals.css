@@ -14,8 +14,20 @@ html,
 body {
   padding: 0;
   margin: 0;
+  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #191825;
+  background-image: linear-gradient(
+    43deg,
+    #191825 26%,
+    #865dff 56%,
+    #e384ff 75%,
+    #ffa3fd 96%
+  );
 }
 a {
   color: inherit;
@@ -32,6 +44,18 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background-color: #000000;
   }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }

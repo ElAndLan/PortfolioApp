@@ -20,6 +20,27 @@
   }
 }
 
+.showIcon,
+.hideIcon {
+  position: absolute;
+  bottom: 50vh;
+  left: 3.6vh;
+  padding: 8px auto;
+
+  :hover {
+    color: #951be6;
+  }
+}
+
+.showIcon {
+  left: 0vh;
+  bottom: 52vh;
+}
+
+.hideIcon {
+  left: 6vh;
+}
+
 .nav {
   display: block;
   text-align: center;
@@ -43,7 +64,7 @@
     }
 
     &:hover {
-      color: #6c25be;
+      color: #951be6;
 
       svg {
         opacity: 0;
@@ -100,7 +121,7 @@
 
   .active {
     svg {
-      color: #6c25be;
+      color: #951be6;
     }
   }
 }

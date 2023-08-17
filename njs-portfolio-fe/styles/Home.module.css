@@ -1,8 +1,9 @@
 .body_content {
   padding: 20% 8% 0;
 }
+
 .content {
-  margin: -1%;
+  margin: 0%;
 }
 
 h1.content {
@@ -16,22 +17,23 @@ h2.content {
 }
 
 .flat_button {
-  color: #6c25be;
+  color: #951be6;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 750;
   letter-spacing: 4px;
   font-family: sans-serif;
   text-decoration: none;
   padding: 10px 18px;
-  border: 1px solid #6c25be;
+  border: 1px solid #951be6;
   margin-top: 25px;
+  margin-left: 10px;
   float: left;
   animation: fadeIn 1s 1.8s backwards;
   white-space: nowrap;
 }
 
 .flat_button:hover {
-  background: #6c25be;
-  color: #333;
-  font-weight: 400;
+  background: #951be6;
+  color: #000;
+  font-weight: 750;
 }

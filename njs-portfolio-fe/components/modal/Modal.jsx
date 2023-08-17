@@ -43,7 +43,7 @@ const Modal = ({ setIsOpen, modalType }) => {
               </div>
             </>
           )}
-          {modalType === "commerce-return" && (
+          {modalType === "contact" && (
             <>
               <div className={styles.modalHeader}>
                 <h5 className={styles.heading}>ECommerce Warning</h5>

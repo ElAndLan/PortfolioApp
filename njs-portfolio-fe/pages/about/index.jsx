@@ -6,65 +6,28 @@ const AboutPage = () => {
       <div className={styles.body_content}>
         <h1 id={styles.title}> About me!</h1>
         <p>
-          Hello, and welcome to my Portfolio! My name is Andrew Alan LaNoue, and
-          this page is mostly going to be about my history, what pushes me
-          forward, and what you can expect from me as a person!
+          First, I want to start off by saying thank you for taking the time to
+          visit my works!{" "}
         </p>
         <p>
-          I cooked professionally for about 5 years out of high-school, working
-          in places like Big Sky Ski Resort and Yellowstone National Park as a
-          traveling chef.
+          Chef turned Caregiver now turned Software Developer,I finally found
+          the courage and the drive to embrace a passion I've had since
+          high-school: Technology and Programming on a professional level where
+          I can bring peoples passions to life.
         </p>
         <p>
-          After those 5 years, my mother had health problems that made her
-          living alone incredibly difficult, so I took that time to step aside
-          from culinary arts and take care of her for a living for nearly 5-6
-          years. After that time, I felt like I needed to take my life back and
-          focus on myself and my career, and I always had a passion for
-          programming and development since taking high-school Java classes.
+          If you're looking for somebody with a keen eye for detail to help
+          bring your ideas to life, look no further! Experienced in both
+          Front-End languages and frameworks (HTML, CSS, Javascript, React,
+          Typescript) as well as Back-End languages (C#, Java, Python,
+          Bootstrap), I'm confident that I can make your dreams a reality.
         </p>
         <p>
-          I was researching development education opportunities, from bootcamps
-          and self-education to actual formal education in the form of college
-          and degrees. During my searches, I found a company called Catalyte
-          that trains people in software development that normally wouldn't have
-          had the opportunity to learn this skillset, and decided to apply on a
-          whim after hearing nothing but good things about the company.
-        </p>
-        <p>
-          To my surprise, I ended up being accepted and joining their rigorous 6
-          month bootcamp in full-stack software development that covered
-          multiple different stacks such as: HTML, CSS, Javascript, React, Java,
-          Springboot as well as non-stack essentials such as GIT, Agile/Scrum
-          methodology, Jira, Product Management, and SDET testing using
-          Selenium.
-        </p>
-        <p>
-          {" "}
-          At the end of the 6 months, I graduated from the cycle and was hired
-          full-time as a Full-Stack software developer, and did that happily for
-          a year spending that time working as a Content Management System
-          specialist for a company called Modere, responsible for transitioning
-          from their old system to their new ContentStack CMS.
-        </p>
-        <p>
-          {" "}
-          Unfortunately, due to the recession and the market I was laid off, but
-          instead of seeing it as a negative I saw it as a start to a brand-new
-          journey where I can continue to learn, grow, and show my skills off
-          while having fun and loving life along the way!
-        </p>
-        <p>
-          Thank you so much for taking the time to learn more about me as a
-          person and as a developer, if I can help you in ANY way possible, be
-          it answering questions or helping to develop the website of your
-          dreams, please do not hesitate to contact me! Either through the
-          "Contact" button on my NavBar to the left, or through the "Contact"
-          button on my main page!{" "}
-        </p>
-        <p>
-          Sincerely, <br />
-          Andrew
+          Be it a professional portfolio website for artists, or an e-commerce
+          website for a growing business, I can help create anything to fit your
+          needs. My projects are listed on this site, and if you feel I would be
+          a good match for your ideas please contact me! We can work out a deal
+          and figure out the details from there.
         </p>
       </div>
     </div>

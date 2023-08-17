@@ -15,7 +15,7 @@ const Home = () => {
   };
   return (
     <div className={styles.home_container}>
-      <div id={styles.tiles}></div>
+      <div id={styles.body_container}></div>
       <Head>
         <title>Next-JS Portfolio Project</title>
       </Head>
@@ -23,10 +23,13 @@ const Home = () => {
         <h1 className={styles.content}>Hello! I am Andrew LaNoue</h1>
         <br />
         <h2 className={styles.content}>
-          Fullstack developer, Leader, Innovator
+          Fullstack developer, Innovator, Leader
         </h2>
+        <Link href="/about" className={styles.flat_button}>
+          My Story
+        </Link>
         <Link href="/contact" className={styles.flat_button}>
-          Contact me!
+          Contact
         </Link>
         {isOpen && <Modal setIsOpen={setIsOpen} modalType={modalType} />}
       </div>
