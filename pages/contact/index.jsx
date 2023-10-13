@@ -15,12 +15,19 @@ const Contact = () => {
   };
 
   const validateForm = () => {
-    for (let i = 0; i <= 4; i++) {
-      if (form.current[i].value == "") {
+    let count = 0;
+    for (let i = 0; i < 4; i++) {
+      if (form.current[count].value == "") {
+        console.log(form.current[count].value);
         console.log("Form invalid!");
         return false;
+      } else {
+        console.log(form.current[count].value);
+        console.log(count);
+        count = count + 1;
       }
     }
+
     console.log("Form valid!");
     return true;
   };
@@ -28,7 +35,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     //console.log(form.current[0].value)
-    if (validateForm()) {
+    if (validateForm() == true) {
       emailjs
         .sendForm(
           "service_0yrjzml",
