@@ -1,0 +1,61 @@
+@primary-color: #6c25be;
+
+@font-face {
+  font-family: "Caveat";
+  src: url("../public/assets/fonts/Caveat.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IndieFlower";
+  src: url("../public/assets/fonts/IndieFlower.ttf") format("truetype");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #191825;
+  background-image: linear-gradient(
+    43deg,
+    #191825 26%,
+    #865dff 56%,
+    #e384ff 75%,
+    #ffa3fd 96%
+  );
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background-color: #000000;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
