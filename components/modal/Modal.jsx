@@ -72,6 +72,32 @@ const Modal = ({ setIsOpen, modalType }) => {
               </div>
             </>
           )}
+          {modalType === "invalid-form" && (
+            <>
+              <div className={styles.modalHeader}>
+                <h5 className={styles.heading}>Your submission is invalid.</h5>
+              </div>
+              <button
+                className={styles.closeBtn}
+                onClick={() => setIsOpen(false)}
+              >
+                <FontAwesomeIcon icon={faX} style={{ marginBottom: "-3px" }} />
+              </button>
+              <div className={styles.modalContent}>
+                Please fill out all fields on the form before submitting.
+              </div>
+              <div className={styles.modalActions}>
+                <div className={styles.actionsContainer}>
+                  <button
+                    className={styles.deleteBtn}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </div>

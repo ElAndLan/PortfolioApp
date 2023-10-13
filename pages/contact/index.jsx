@@ -14,23 +14,39 @@ const Contact = () => {
     setIsOpen(true);
   };
 
+  const validateForm = () => {
+    for (let i = 0; i <= 4; i++) {
+      if (form.current[i].value == "") {
+        console.log("Form invalid!");
+        return false;
+      }
+    }
+    console.log("Form valid!");
+    return true;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_0yrjzml",
-        "template_wifql2f",
-        form.current,
-        "X5VDOcIcz2MQdX8IP"
-      )
-      .then(
-        (result) => {
-          handleModalOpen("message-sent");
-        },
-        (error) => {
-          console.log(error);
-        }
-      );
+    //console.log(form.current[0].value)
+    if (validateForm()) {
+      emailjs
+        .sendForm(
+          "service_0yrjzml",
+          "template_wifql2f",
+          form.current,
+          "X5VDOcIcz2MQdX8IP"
+        )
+        .then(
+          (result) => {
+            handleModalOpen("message-sent");
+          },
+          (error) => {
+            console.log(error);
+          }
+        );
+    } else {
+      handleModalOpen("invalid-form");
+    }
   };
 
   return (
