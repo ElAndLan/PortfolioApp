@@ -43,10 +43,12 @@ const Modal = ({ setIsOpen, modalType }) => {
               </div>
             </>
           )}
-          {modalType === "contact" && (
+          {modalType === "message-sent" && (
             <>
               <div className={styles.modalHeader}>
-                <h5 className={styles.heading}>ECommerce Warning</h5>
+                <h5 className={styles.heading}>
+                  Your message has been delivered successfully.
+                </h5>
               </div>
               <button
                 className={styles.closeBtn}
@@ -55,13 +57,8 @@ const Modal = ({ setIsOpen, modalType }) => {
                 <FontAwesomeIcon icon={faX} style={{ marginBottom: "-3px" }} />
               </button>
               <div className={styles.modalContent}>
-                This project is still a work in progress! It is being constantly
-                updated. To return to the homepage, please press the
-                <FontAwesomeIcon
-                  icon={faGlobe}
-                  style={{ marginLeft: "3px", fontSize: "2vh" }}
-                />{" "}
-                icon in the top left.
+                I will respond to you as soon as I can, thank you for getting in
+                touch with me!
               </div>
               <div className={styles.modalActions}>
                 <div className={styles.actionsContainer}>
@@ -69,7 +66,7 @@ const Modal = ({ setIsOpen, modalType }) => {
                     className={styles.deleteBtn}
                     onClick={() => setIsOpen(false)}
                   >
-                    Close warning
+                    Close
                   </button>
                 </div>
               </div>

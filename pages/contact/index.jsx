@@ -1,10 +1,19 @@
 import React from "react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import styles from "./index.module.scss";
 import emailjs from "@emailjs/browser";
+import Modal from "../../components/modal/Modal";
 
 const Contact = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [modalType, setModalType] = useState("default");
   const form = useRef();
+
+  const handleModalOpen = (newModalType) => {
+    setModalType(newModalType);
+    setIsOpen(true);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
@@ -16,7 +25,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result);
+          handleModalOpen("message-sent");
         },
         (error) => {
           console.log(error);
@@ -90,6 +99,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      {isOpen && <Modal setIsOpen={setIsOpen} modalType={modalType} />}
     </div>
   );
 };
